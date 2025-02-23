@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Store</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Controller</title>
 </head>
 <body>
     <header>
@@ -49,11 +49,8 @@
             </ul>
         </section>
     </aside>
-
-    <!-- Main Section -->
-
+    <!-- main section -->
     <main>
-        <h2>All Items</h2>
         <div class="product">
             <a href="controller.html">
               <img src="images/controller.jpg" alt="game controller picture">           
@@ -64,54 +61,31 @@
             <a href="controller.html" class="button" >More Info</a>
             <a href="" class="button" id="position">Add To Cart</a>
           </div>
-    
-          <div class="product">
-            <img src="images/headphones.jpg" alt="headphones picture">            
-            <h4><a href="">White headphones</a></h4>
-            <p>$50.00</p>
-            <p>White<br> headphones!</p>
-            <a href="" class="button">More Info</a>
-            <a href="" class="button">Add To Cart</a>
-          </div>
-    
-          <div class="product">
-            <img src="images/camera.jpg" alt="camera picture">            
-            <h4><a href="">Canon Camera</a></h4>
-            <p>$600.00</p>
-            <p>Camera<br> by Canon!</p>
-            <a href="" class="button">More Info</a>
-            <a href="" class="button">Add To Cart</a>
-          </div>
-    
-          <div class="product">
-            <img src="images/microphone.jpg" alt="microphone picture">            
-            <h4><a href="">Yeti Microphone</a></h4>
-            <p>$99.00</p>
-            <p>Blue<br> Yeti microphone!</p>
-            <a href="" class="button">More Info</a>
-            <a href="" class="button">Add To Cart</a>
-          </div>
-    
-          <div class="product">
-            <img src="images/cables.jpg" alt="cables picture">            
-            <h4><a href="">Cables</a></h4>
-            <p>$9.99</p>
-            <p>Cables available<br> in different lengths!</p>
-            <a href="" class="button">More Info</a>
-            <a href="" class="button">Add To Cart</a>
-          </div>
-    
-          <div class="product">
-            <img src="images/lenses.jpg" alt="lenses picture">            
-            <h4><a href="">Camera Lenses</a></h4>
-            <p>$ 125.00</p>
-            <p>Camera<br> Lenses!</p>
-            <a href="" class="button">More Info</a>
-            <a href="" class="button">Add To Cart</a>
-          </div>
+
+          <table>
+            <caption>Buy in bulk and save!</caption>
+            <thead>
+              <tr>
+                <th>Quantity</th>
+                <th>1</th>
+                <th>2 - 3</th>
+                <th>5 - 10</th>
+                <th>10+</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Price</td>
+                <td>80.00</td>
+                <td>75.00</td>
+                <td>70.00</td>
+                <td>65.00</td>
+              </tr>
+            </tbody>
+          </table>
+
+
     </main>
-
-
     <footer>
         <nav>
             <ul>
