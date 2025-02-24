@@ -1,13 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* my stuff  */
+
+
 html {
+     background: #f7f7f7;
+}
+
+body {
+    background: snow;
+    max-width: 95%;
+    max-height: 95%;
+    margin: 0 auto;
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
     font-variation-settings: 100;
+    color: rgb(49, 46, 46);
+}
+
+header, footer {
+    background: #333a40;
+    color: snow;
+    border-radius: 0 0 200px 0;
+    border: none;
+    outline: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 30px;
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: snow;
+}
+
+a:hover {
+    color: #566a90;
+}
+
+header li {
+    display: inline;
+}
+
+header h1, nav {
+    margin: 10px;
+    display: inline-block;
+    color: snow;
+}
+
+main {
+    width: 60%;
+    display: inline-block;
+    padding: 10px;
+}
+
+main h2 {
+    margin: 25px 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(49, 46, 46);
+
+}
+
+aside {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    color: rgb(49, 46, 46);
+    position: sticky;
+    top: 10px;
+    left: 10px;
+}
+
+aside h2 {
+    margin: 25px 15px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+aside h3 {
+    margin: 25px 15px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 h1 {
     font-size: 60px;
     font-weight: bold;
     letter-spacing: -3px;
+}
+
+.product {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 0 0 65px 0;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    color: #333a40;
+}
+
+.product a {
+    color: #333a40;
+    padding: 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.product img {
+    border-radius: 60px 0 60px 0;
+}
+
+.button {
+    padding: 10px;
+    display: inline-block;
+}
+
+.button:last-of-type {
+    background-color: black;
+    color: snow;
+    margin: 15px;
+    padding: 15px;
+
+}
+
+/* product detail page */
+
+.product-detail {
+    width: 85%;
+    border-radius: 0 0 95px 0;
+}
+
+.product-detail img {
+    max-width: 50%;
+    float: left;
+}
+
+
+/* contact us form */
+
+form {
+    padding: 25px;
+    margin: 25px 0;
+    width: 80%;
+}
+
+form > div {
+    margin: 25px 0;
+}
+
+.inline label {
+    width: 100px;
+    display: inline-block;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 25px;
+    width: 60%;
 }
