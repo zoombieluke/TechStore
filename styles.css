@@ -57,8 +57,8 @@ html {
 
 body {
     background: snow;
-    max-width: 95%;
-    max-height: 95%;
+    max-width: 100%;
+    max-height: 100%;
     margin: 0 auto;
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
@@ -71,9 +71,7 @@ body {
 header, footer {
     background: #333a40;
     color: snow;
-    border-radius: 0 0 200px 0;
-    border: none;
-    outline: none;
+    padding: 30px;
 }
 
 header {
@@ -106,10 +104,25 @@ header li {
     display: inline;
 }
 
+footer {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer li {
+    display: inline;
+}
+
 header h1, nav {
     margin: 10px;
     display: inline-block;
     color: snow;
+}
+
+header h1 {
+    width: 70%;
 }
 
 main {
@@ -164,11 +177,19 @@ h1 {
     padding: 10px;
     display: inline-block;
     color: #333a40;
+    text-align: center;
+    line-height: normal;
 }
 
 .product a {
     color: #333a40;
     padding: 5px;
+}
+
+.product p {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 img {
@@ -177,6 +198,7 @@ img {
 
 .product img {
     border-radius: 60px 0 60px 0;
+
 }
 
 .button {
@@ -204,6 +226,29 @@ img {
     float: left;
 }
 
+table {
+    width: 600px;
+    text-align: left;
+    margin: 30px auto;
+}
+
+caption {
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 5px dotted #333a40;
+    padding: 25px;
+    margin: 10px;
+}
+
+th, td {
+    padding: 20px;
+}
+
+
+tr:hover {
+    background-color: #f7f7f7;
+}
+
 
 /* contact us form */
 
@@ -217,12 +262,50 @@ form > div {
     margin: 25px 0;
 }
 
+input {
+    box-sizing: border-box;
+}
+
+
 .inline label {
     width: 100px;
     display: inline-block;
+    font-weight: 400;
+    font-size: 25px;
+    margin: 10px;
 }
+
+.subscribe, .respond p {
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.subscribe, .respond label {
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+
 
 input[type="text"], input[type="email"], textarea {
     padding: 25px;
     width: 60%;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+.inline {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    gap: 10px; /* Adds some space between the label and textarea */
+}
+
+.message {
+    align-self: flex-start; /* Aligns the label with the top of the textarea */
+    padding-top: 25px; /* Fine-tune for perfect alignment */
 }
