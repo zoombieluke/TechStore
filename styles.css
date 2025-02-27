@@ -81,6 +81,10 @@ header {
     z-index: 1;
 }
 
+header ul {
+    display: flex;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -112,9 +116,13 @@ footer {
     font-weight: bold;
 }
 
-footer li {
-    display: inline;
+footer ul {
+    display: flex;
 }
+
+/* footer li {
+    display: inline;
+} */
 
 header h1, nav {
     margin: 10px;
@@ -316,7 +324,7 @@ input[type="text"], input[type="email"], textarea {
 
 
 
-
+/* 
 @media (min-width: 800px) {
 
     input[type="search"] {
@@ -369,6 +377,6 @@ input[type="text"], input[type="email"], textarea {
   }
   
   
-  
+   */
   
   
